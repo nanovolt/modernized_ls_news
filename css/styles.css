@@ -96,3 +96,28 @@ img {
 .icon-brands {
   font-family: "Font Awesome 6 Brands";
 }
+
+.open_menu_icon_content::after {
+  font-family: "Font Awesome 6 Free";
+  font-size: var(--fs-icon);
+  content: "\f0c9";
+  color: red;
+  cursor: pointer;
+  width: min(2rem, var(--fs-icon));
+  max-height: var(--fs-icon);
+  overflow: hidden;
+}
+
+.close_menu_icon_content::before {
+  font-size: var(--fs-icon);
+  content: "\f00d";
+  color: red;
+  cursor: pointer;
+  width: min(2rem, var(--fs-icon));
+  max-height: var(--fs-icon);
+  overflow: hidden;
+}
+
+.icon:hover::before {
+  color: rgb(128, 128, 128);
+}
