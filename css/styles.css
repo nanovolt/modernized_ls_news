@@ -39,3 +39,27 @@ body {
   /* transition: 250ms; */
   font-size: var(--fs-normal);
 }
+
+/* 1080p */
+@media screen and (width >=1920px) {
+  :root {
+    font-size: 90%;
+    --fs-icon: clamp(40px, 5rem, 15rem);
+  }
+}
+
+/* 1440p */
+@media screen and (width >=2560px) {
+  :root {
+    font-size: 125%;
+    --fs-icon: clamp(40px, 5rem, 15rem);
+  }
+}
+
+/* 4K 2160p */
+@media screen and (width >=3840px) {
+  :root {
+    font-size: 200%;
+    --fs-icon: clamp(40px, 5rem, 15rem);
+  }
+}
