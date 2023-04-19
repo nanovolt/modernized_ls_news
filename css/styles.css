@@ -1,0 +1,15 @@
+:root {
+  font-size: 62.5%;
+  --fs-xl: clamp(3.5rem, 12vw + 1rem, 8rem);
+  --fs-large: clamp(2.4rem, 10vw, 3.2rem);
+  --fs-normal: clamp(0.6rem, 5vw, 1.6rem);
+  --fs-small: 0.5rem;
+  --fs-icon: clamp(40px, 2rem, 15rem);
+  --fs-sm-icon: clamp(10px, 0.5rem, 20px);
+  --body-bg-color: rgb(243, 243, 243);
+  --header-color: white;
+  --container-color: white;
+  --border-color: lightgray;
+  --font-color: #121212;
+  color: var(--font-color);
+}
