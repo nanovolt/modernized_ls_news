@@ -121,3 +121,21 @@ img {
 .icon:hover::before {
   color: rgb(128, 128, 128);
 }
+
+@keyframes dark_mode_on {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: #444
+  }
+}
+
+@keyframes dark_mode_off {
+  from {
+    background-color: #444;
+  }
+  to {
+    background-color: white
+  }
+}
