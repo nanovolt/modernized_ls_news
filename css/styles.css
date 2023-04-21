@@ -191,3 +191,42 @@ img {
   border-radius: 1rem;
   /* box-shadow: 0 0 5px 5px #ff0000; */
 }
+
+.grid_container {
+  background-color: darkorange;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.5em;
+  transition: 1000ms;
+}
+
+#scroll_top_mini {
+  display: none;
+}
+
+@media screen and (width <=1024px) {
+  #scroll_top {
+    left: auto;
+    right: 10%;
+    bottom: 10%;
+    z-index: 1;
+    border: none;
+    outline: none;
+    background-color: white(255, 0, 0);
+
+    color: red(255, 0, 0);
+    cursor: pointer;
+    width: 6rem;
+    height: 6rem;
+    background-image: url('../img/arrow.png');
+    background-position-x: center;
+    background-position-y: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-size: 80%;
+    border-radius: 50%;
+    border: 1px solid red;
+  }
+}
