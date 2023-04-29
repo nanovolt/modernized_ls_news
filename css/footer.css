@@ -1,0 +1,132 @@
+.footer {
+    /* grid-column: 2/3; */
+    width: 100%;
+    margin-top: 1rem;
+    
+}
+.footer_top_wrapper {
+    width: 100%;
+    background-color: var(--container-color);
+}
+.footer_top {
+    max-width: calc(120ch + 2rem);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    /* border-top: 2px solid red; */
+    
+}
+.footer_bottom_wrapper {
+    width: 100%;
+    background-color: #121212;
+}
+.footer_bottom {
+    max-width: calc(120ch + 4rem);
+    margin: 0 auto;
+    /* font-size: 1.2rem; */
+    /* border-top: 3px solid #555; */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    
+    color: white;
+}
+.subscribe_form {
+    margin: 1rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.subcribe_button {
+    
+    color: white;
+    background-color: red;
+    border: 0;
+    padding: 0.5rem 2rem;
+}
+.subcribe_button:hover {
+    cursor: pointer;
+}
+.footer_left, .footer_right {
+    display: block;
+}
+.footer_left ul {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(4, auto);
+    column-gap: 8rem;
+    row-gap: 1rem;
+}
+ul a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+ul a:hover {
+    text-decoration:underline;
+    color: red;
+}
+.tos {
+    color: red;
+}
+
+.footer_social_facebook {
+    text-decoration: none;
+}
+.footer_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer_social_title {
+    /* text-align: center; */
+    font-size: 3rem;
+}
+.footer_social {
+    text-rendering: auto;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 900; 
+    padding: 0;
+    border: none;
+    line-height: 1;
+    
+    background-color: hsla(0, 0%, 0%, 0);
+    font-family: "Font Awesome 6 Brands";
+    font-size: 5rem;
+}
+.footer_fb::before {
+    content: "\f082";
+    color: darkblue;
+}
+.footer_tw::before {
+    content: "\f081";
+    color: rgb(0, 153, 255);
+}
+.footer_ig::before {
+    content: "\e055";
+    color:hotpink;
+    /* color: rgb(0, 153, 255); */
+}
+.footer_tg::before {
+    content: "\f2c6";
+    color:rgb(0, 68, 255);
+}
+
+.footer_our_publication {
+    max-width: 80ch;
+    text-align: center;
+}
+
+@media screen and (width <= 1024px) {
+    .footer_left ul {
+        grid-template-rows: repeat(6, auto);
+    }
+}
